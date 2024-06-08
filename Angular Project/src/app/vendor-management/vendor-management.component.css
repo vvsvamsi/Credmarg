@@ -1,0 +1,13 @@
+.inputfiled{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    background-color: rgb(251, 251, 246);
+    height: 35px
+}
+.btn{
+    background-color: rgb(15, 117, 233);
+    color: whitesmoke;
+}
+.col-sm-3{
+    color:azure; background-color: #044068; padding-left: 26px; height:40px;    
+}

@@ -1,0 +1,18 @@
+.links{
+margin-left: 15%;
+margin-top: 10%;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .app-header {
+    background-color: #416991ed;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  

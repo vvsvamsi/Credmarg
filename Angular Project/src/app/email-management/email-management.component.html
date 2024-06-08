@@ -1,0 +1,21 @@
+
+<div class="col-sm-3" >Email Management</div>
+<br/>
+<form (ngSubmit)="sendEmail()">
+  <select class="col-sm-4" [(ngModel)]="email.recipient" name="recipient">
+    <option *ngFor="let vendor of vendors" [value]="vendor.email">{{ vendor.name }}</option>
+  </select>
+  <br/>
+  <br/>
+  <button class="btn" type="submit">Send Email</button>
+</form>
+<br/>
+<br/>
+<div class="col-sm-3" >Sent Emails</div><br/>
+
+  <ul >
+    <li *ngFor="let email of sentEmails">
+
+      {{ email.timestamp }} - {{ email.recipient }} - {{ email.message }}
+    </li>
+  </ul>

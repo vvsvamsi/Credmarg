@@ -1,0 +1,20 @@
+<div class="col-sm-3">
+  Vendor Management
+</div>
+<br/>
+
+<form (ngSubmit)="addVendor()">
+  <div class="col-sm-12">
+
+  <input  class=" col-sm-4 inputfiled" [(ngModel)]="vendor.name" name="name" placeholder="Name" required><br/><br/>
+  <input  class=" col-sm-4 inputfiled" [(ngModel)]="vendor.email" name="email" placeholder="Email" required><br/><br/>
+  <input  class=" col-sm-4 inputfiled" [(ngModel)]="vendor.upi" name="upi" placeholder="UPI" required><br/><br/>
+  <button class="btn" type="submit">Add Vendor</button>
+  </div>
+</form>
+<br/>
+<br/>
+<div class="col-sm-3" >Vendors</div><br/>
+<ul>
+  <li *ngFor="let ven of vendors">{{ ven.name }} - {{ ven.email }} - {{ ven.upi }}</li>
+</ul>

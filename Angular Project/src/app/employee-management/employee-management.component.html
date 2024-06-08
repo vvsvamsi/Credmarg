@@ -1,0 +1,24 @@
+<div class="col-sm-3">
+  Employee Management
+</div>
+<br/>
+
+    <form (ngSubmit)="addEmployee()">
+      <div class="col-sm-12">
+      <input class=" col-sm-4 inputfiled"  [(ngModel)]="employee.name" name="name" placeholder="Name" required><br/><br/>
+      <input  class=" col-sm-4 inputfiled"  [(ngModel)]="employee.designation" name="designation" placeholder="Designation" required>
+      </div>
+<br/>
+      <div class="col-sm-12">
+      <input  class=" col-sm-4 inputfiled" [(ngModel)]="employee.ctc" name="ctc" placeholder="CTC" required><br/><br/>
+      <input  class=" col-sm-4 inputfiled" [(ngModel)]="employee.email" name="email" placeholder="Email" required><br/><br/>
+      <button class="btn"type="submit">Add Employee</button>
+      </div>
+    </form>
+<br/>
+<br/>
+    <div class="col-sm-3">
+      Employees
+    </div>    <ul>
+      <li *ngFor="let emp of employees">{{ emp.name }} - {{ emp.designation }} - {{ emp.ctc }} - {{ emp.email }}</li>
+    </ul> 
